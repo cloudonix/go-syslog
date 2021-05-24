@@ -93,6 +93,7 @@ func (p *Parser) Dump() syslogparser.LogParts {
 		"hostname":  p.header.hostname,
 		"tag":       p.message.tag,
 		"content":   p.message.content,
+		"message":   p.message.content,
 		"priority":  p.priority.P,
 		"facility":  p.priority.F.Value,
 		"severity":  p.priority.S.Value,
